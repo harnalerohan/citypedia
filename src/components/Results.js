@@ -19,8 +19,8 @@ const Results = () => {
 
 
   useEffect(() => {
-    searchCity()
-  })
+  searchCity()
+  }, [])
 
   return (
     <div>

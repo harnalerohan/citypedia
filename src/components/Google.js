@@ -58,7 +58,6 @@ const Google = () => {
       <div className="wrapper">
         <h1>CityPedia</h1>
         <div className="search-input">
-          <form>
             <input  autoComplete="off" onChange={onChange} value={query} name="query" type="text" placeholder="Type to search.."/>
             <div className="autocom-box">
 
@@ -79,7 +78,6 @@ const Google = () => {
               )}
             </div>
             <div className="icon"><i className="fas fa-search"/></div>
-          </form>
         </div>
       </div>
     </div>
