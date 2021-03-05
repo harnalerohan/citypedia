@@ -1,10 +1,20 @@
 import React from 'react'
+import Google from './components/Google'
+import Results from "./components/Results"
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route
+} from "react-router-dom"
 
 const App = () => {
   return (
-    <div>
-      <h1>Hiiii</h1>
-    </div>
+    <Router>
+      <Switch>
+        <Route path="/" exact component = {Google}/>
+        <Route path="/:city" exact component = {Results}/>
+      </Switch>
+    </Router>
   )
 }
 
