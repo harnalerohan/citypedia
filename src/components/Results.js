@@ -9,18 +9,13 @@ const Results = () => {
 
   const {city} = useParams();
 
-  const searchCity = () => {
+  useEffect(() => {
     findCity(city).then(res => {
       setDetails(res)
     }).catch(err => {
       console.log(err)
     })
-  }
-
-
-  useEffect(() => {
-  searchCity()
-  }, [])
+  }, [city])
 
   return (
     <div>
